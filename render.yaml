@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: directus-admin
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: HOST
+        value: "0.0.0.0"
